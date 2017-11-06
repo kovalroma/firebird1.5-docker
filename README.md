@@ -1,7 +1,7 @@
 # Firebird SQL Database 1.5.6
 
 ## Running Docker Image
-     sudo docker run -p 3050:3050 -v /var/firebirddb:/var/firebirddb --restart=always -it kovalr/firebird1.5x
+     sudo docker run -p 3050:3050 -v /var/firebirddb:/var/firebirddb --restart=always -it kovalr/firebird1.5
      
      
 ## Default credentionals
