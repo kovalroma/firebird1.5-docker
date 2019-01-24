@@ -1,12 +1,18 @@
 # Firebird SQL Database 1.5.6
 
 ## Running Docker Image
-     sudo docker run -p 3050:3050 -v /var/firebirddb:/var/firebirddb --restart=always -it kovalr/firebird1.5
+     sudo docker run -d --name=firebird15 -e KEY_ENV=masterkey -p 3050:3050 -v /var/firebirddb:/var/firebirddb --restart=always -it kovalr/firebird1.5
      
      
 ## Default credentionals
      login: sysdba
      password: masterkey
+     
+##  Available environment variables
+    
+
+ - **KEY_ENV**: password for Firebird SQL . Default username sysdba
+
      
 ## Exposes:
      3050/tcp
